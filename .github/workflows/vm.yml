@@ -1,0 +1,16 @@
+
+name: Start Ubuntu VM
+
+on:
+  workflow_dispatch:
+
+jobs:
+  vm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - name: Keep VM running
+        run: |
+          echo "VM is running"
+          sleep 21600
